@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color:#0C1E30;
+  }
+.container {
+    display: flex;
+    width: 90vw;
+    margin-top: 25px;
+  }
+.p2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    cursor: auto;
+    transition: all 700ms ease-in;
+    -webkit-transition: all 700ms ease-in
+}
+.p2.active{
+    flex: 1.5;
+}
+.title1{
+    text-align: center;
+    cursor: pointer;
+}
+.text1 {
+    font-size: 18px;
+    position: absolute;
+    left: 25px;
+    margin: 0;
+    opacity: 0;
+    line-height: 40px;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.p2.active .text1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.p2.active .title1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    text-align:left;
+    margin-left: 30px;
+}
+.p2.active .btn {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    text-align:left;
+    margin-left: 30px;
+}
+.p2.active .btn2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.4s;
+    text-align:left;
+    margin-left: 30px;
+}
+.btn{
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.btn-1{
+    width: 145px;
+    height: 60px;
+    color: #ffffff;
+    background: #F08519;
+    border: none;
+    font-size: 20px;
+}
+.btn2{
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    display: flex;
+    margin-left: 70px;
+}
+.t-1:hover{
+    color:#F08519 ;
+    cursor: pointer;
+}
+.btn-1:hover{
+    color: gray;
+    cursor: pointer;
+}
+ 
